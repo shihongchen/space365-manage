@@ -67,7 +67,6 @@ export default () => {
 
     const layout = {
             labelCol: { span: 6 },
-            wrapperCol: { span: 14 },
     };
     const tailLayout = {
         wrapperCol: { offset: 8, span: 16 },
@@ -103,33 +102,32 @@ export default () => {
                 footer={null}
                 closable={false}
             >
-                <Form {...layout} form={form} name="control-hooks" onFinish={onFinish}>
-                    <Form.Item name="name" label="姓名" rules={[{ required: true }]}>
+                <Form {...layout} form={form} layout="vertical"  name="control-hooks" onFinish={onFinish}>
+                    <Form.Item name="name" label="姓名" >
                         <Input />
                     </Form.Item>
-                    <Form.Item name="email" label="邮箱" rules={[{ required: true }]}>
+                    <Form.Item name="email" label="邮箱" >
                         <Input />
                     </Form.Item>
-                    <Form.Item name="phone" label="手机" rules={[{ required: true }]}>
+                    <Form.Item name="phone" label="手机" >
                         <Input />
                     </Form.Item>
-                    <Form.Item name="work" label="工号" rules={[{ required: true }]}>
+                    <Form.Item name="work" label="工号" >
                         <Input />
                     </Form.Item>
-                    <Form.Item name="job" label="职务" rules={[{ required: true }]}>
+                    <Form.Item name="job" label="职务" >
                         <Input />
                     </Form.Item>
                     <Form.Item
                         name="isLogin"
                         label="登录"
-                        rules={[{ required: true}]}
                     >
                         <Radio.Group>
                             <Radio.Button value="N">不允许</Radio.Button>
                             <Radio.Button value="Y">允许</Radio.Button>
                         </Radio.Group>
                     </Form.Item>
-                    <Form.Item {...tailLayout}>
+                    <Form.Item className='btnGroup' {...tailLayout}>
                         <Button type="primary" style={{marginRight:'10px'}} htmlType="submit">确认</Button>
                         <Button htmlType="button" onClick={onReset}>取消</Button>
                         {/* <Button type="link" htmlType="button" onClick={onFill}>

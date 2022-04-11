@@ -23,3 +23,20 @@
     margin-right: 10px;
     color:#999
 }
+
+.antsllider{
+  background-color: #1c1b20 !important;
+}
+.ant-layout-sider{
+  background-color: #1c1b20 !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #292a2f !important;
+}
+/* .ant-menu-title-content a{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: inline-block;
+} */

@@ -1,14 +1,5 @@
 import { Layout, Menu, Breadcrumb } from 'antd';
 import  UserList  from '../view/UserList'
-  const Tom = () => (
-    <div>
-      <Breadcrumb style={{ margin: '16px 0' }}>
-          <Breadcrumb.Item>User</Breadcrumb.Item>
-          {/* <Breadcrumb.Item>Tom</Breadcrumb.Item> */}
-      </Breadcrumb>
-      <h2>user</h2>
-    </div>
-  );
   const Team1 = () => (
     <div>
       <Breadcrumb style={{ margin: '16px 0' }}>
@@ -33,11 +24,11 @@ export const routes = [
         component: UserList
     },
     {
-        path: '/team/team1',
+        path: 'team4',
         component: Team1
     },
     {
-        path: '/team/team2',
+        path: 'team5',
         component: Team2
     },
 ]
